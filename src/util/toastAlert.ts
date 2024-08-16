@@ -2,7 +2,7 @@ import { toast } from 'react-toastify';
 
 export function toastAlerta(mensagem: string, tipo: string) {
     switch (tipo) {
-        case 'sucess':
+        case 'success':
             toast.success(mensagem, {
                 position: 'bottom-right',
                 autoClose: 2000,

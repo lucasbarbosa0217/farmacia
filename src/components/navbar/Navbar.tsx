@@ -14,8 +14,10 @@ function Navbar() {
                 </Link>
 
                 <div>
-                    <ul>
+                    <ul className='flex gap-4'>
                         <Link to="/categorias">Categorias</Link>
+                        <Link to="/categorias/criar">Criar Categorias</Link>
+
                     </ul>
                 </div>
             </div>
