@@ -8,6 +8,7 @@ import ListarCategorias from './components/categoria/ListarCategorias'
 import FormularioCategoria from './components/categoria/FormularioCategoria'
 import 'react-toastify/dist/ReactToastify.css';
 import DeletarCategoria from './components/categoria/DeletarCategoria'
+import Search from './pages/search/Search'
 
 
 function App() {
@@ -19,6 +20,8 @@ function App() {
 
         <div className='flex flex-col items-center flex-grow bg-stone-200 p-4'>
           <Routes>
+            <Route path="/" element={<Home />}></Route>
+            <Route path="/pesquisar/:nome" element={<Search />}></Route>
             <Route path="/home" element={<Home />}></Route>
             <Route path="/categorias" element={<ListarCategorias />}></Route>
             <Route path="/categorias/editar/:id" element={<FormularioCategoria />}></Route>

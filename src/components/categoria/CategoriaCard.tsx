@@ -11,11 +11,11 @@ interface CardCategoriaProps {
 function CardCategoria({ categoria }: CardCategoriaProps) {
     return (
 
-        <div className='flex flex-col bg-stone-100 rounder-lg shadow-lg rounded-md overflow-hidden'>
+        <div className='flex flex-col bg-stone-100 rounder-lg shadow-lg rounded-md overflow-hidden flex-grow md:max-w-[20rem]'>
 
-            <div className='p-4 w-full border-b'>
-                <p className='font-medium text-2xl'>{categoria.nome}</p>
-                <p className=''>{categoria.descricao}</p>
+            <div className='p-4 w-full border-b flex-grow gap-2 flex flex-col '>
+                <p className='font-medium text-2xl max-w-[15rem]'>{categoria.nome}</p>
+                <p className=' max-w-[10rem]'>{categoria.descricao}</p>
             </div>
 
             <div className='flex w-full'>

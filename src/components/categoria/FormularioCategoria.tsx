@@ -60,7 +60,7 @@ function FormularioCategoria() {
         <div className="flex flex-col max-w-[30rem] w-full   bg-stone-100 rounded-2xl shadow-lg overflow-hidden">
 
 
-            <h1 className="text-4xl  text-center my-8 mx-2">
+            <h1 className="text-3xl  text-center my-8 mx-2">
                 {id === undefined ? 'Cadastre uma nova Categoria' : 'Editar Categoria'}
             </h1>
 
@@ -95,7 +95,7 @@ function FormularioCategoria() {
                 <button
                     disabled={isLoading}
                     className={
-                        "rounded text-green-600 py-2 flex justify-center items-center gap-2 border-t border-green-600 hover:bg-green-600 hover:text-stone-50" +
+                        "rounded text-green-600 py-2 flex justify-center items-center gap-2 border-t  hover:bg-green-600 hover:text-stone-50" +
                         `${isLoading ? ' bg-stone-700 hover:bg-stone-700' : ''}`
                     }
                     type="submit"
