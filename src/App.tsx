@@ -8,17 +8,17 @@ import Footer from './components/footer/Footer'
 function App() {
   return (
     <>
-    <ToastContainer />
+      <ToastContainer />
       <BrowserRouter>
-      <Navbar/>
+        <Navbar />
 
-      <div className='flex flex-col items-center flex-grow bg-stone-200 p-4'>
-      <Routes>
-        <Route path="/home" element={<Home/>}></Route>
-      </Routes>
-      </div>
+        <div className='flex flex-col items-center flex-grow bg-stone-200 p-4'>
+          <Routes>
+            <Route path="/home" element={<Home />}></Route>
+          </Routes>
+        </div>
 
-      <Footer/>
+        <Footer />
       </BrowserRouter>
     </>
   )

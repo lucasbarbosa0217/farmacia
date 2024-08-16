@@ -12,7 +12,7 @@ function Navbar() {
                         FARMAZIL
                     </h1>
                 </Link>
-               
+
                 <div>
                     <ul>
                         <Link to="/categorias">Categorias</Link>
