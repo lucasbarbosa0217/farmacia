@@ -1,33 +1,38 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from 'react'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { ToastContainer } from 'react-toastify'
+import Navbar from './components/navbar/Navbar'
+import Home from './pages/home/Home'
+import Footer from './components/footer/Footer'
+import ListarCategorias from './components/categoria/ListarCategorias'
+import FormularioCategoria from './components/categoria/FormularioCategoria'
+import 'react-toastify/dist/ReactToastify.css';
+import DeletarCategoria from './components/categoria/DeletarCategoria'
+import Search from './pages/search/Search'
+
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <ToastContainer />
+      <BrowserRouter>
+        <Navbar />
+
+        <div className='flex flex-col items-center flex-grow bg-stone-200 p-4'>
+          <Routes>
+            <Route path="/" element={<Home />}></Route>
+            <Route path="/pesquisar/:nome" element={<Search />}></Route>
+            <Route path="/home" element={<Home />}></Route>
+            <Route path="/categorias" element={<ListarCategorias />}></Route>
+            <Route path="/categorias/editar/:id" element={<FormularioCategoria />}></Route>
+            <Route path="/categorias/criar" element={<FormularioCategoria />}></Route>
+            <Route path="/categorias/deletar/:id" element={<DeletarCategoria />}></Route>
+
+          </Routes>
+        </div>
+
+        <Footer />
+      </BrowserRouter>
     </>
   )
 }
