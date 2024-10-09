@@ -1,4 +1,3 @@
-import React from 'react'
 import Categoria from '../../model/Categoria'
 import { Pencil } from '@phosphor-icons/react';
 import { Eraser } from '@phosphor-icons/react/dist/ssr';
