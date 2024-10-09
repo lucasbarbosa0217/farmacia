@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import Categoria from '../../model/Categoria';
 import { buscar, deletar } from '../../service/service';
 import { toastAlerta } from '../../util/toastAlert';
-import { Eraser, FloppyDisk, Pencil, SkipBack } from '@phosphor-icons/react';
+import { Eraser, SkipBack } from '@phosphor-icons/react';
 import { BallTriangle } from 'react-loader-spinner';
 
 function DeletarCategoria() {

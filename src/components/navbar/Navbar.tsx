@@ -1,6 +1,6 @@
 import { Pill } from '@phosphor-icons/react'
-import React, { ChangeEvent, useRef, useState } from 'react'
-import { Link, Navigate, useNavigate, useParams } from 'react-router-dom'
+import  { ChangeEvent, useState } from 'react'
+import { Link,  useNavigate, useParams } from 'react-router-dom'
 import { toastAlerta } from '../../util/toastAlert';
 import { MagnifyingGlass } from '@phosphor-icons/react/dist/ssr';
 

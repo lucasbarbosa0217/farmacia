@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from 'react'
+import  { useEffect, useState } from 'react'
 import CardCategoria from './CategoriaCard'
 import Categoria from '../../model/Categoria';
 import { buscar } from '../../service/service';
 import { toastAlerta } from '../../util/toastAlert';
-import { ColorRing, DNA } from 'react-loader-spinner';
+import { ColorRing} from 'react-loader-spinner';
 import { useParams } from 'react-router-dom';
 
 
